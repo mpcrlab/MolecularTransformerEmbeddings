@@ -138,3 +138,24 @@ optional arguments:
 
 ```
 
+## Citing
+
+If you find this work helpful in your research, please cite our publication ["Predicting Binding from Screening Assays with Transformer Network Embeddings"](https://pubs.acs.org/doi/10.1021/acs.jcim.9b01212) 😊.
+
+```
+@article{morris2020transformer,
+author={Morris, Paul
+and St. Clair, Rachel
+and Hahn, William Edward
+and Barenholtz, Elan},
+title={Predicting Binding from Screening Assays with Transformer Network Embeddings},
+journal={Journal of Chemical Information and Modeling},
+year={2020},
+month={Jun},
+day={22},
+publisher={American Chemical Society},
+issn={1549-9596},
+doi={10.1021/acs.jcim.9b01212},
+url={https://doi.org/10.1021/acs.jcim.9b01212}
+}
+```
