@@ -142,6 +142,8 @@ optional arguments:
 
 If you find this work helpful in your research, please cite our publication ["Predicting Binding from Screening Assays with Transformer Network Embeddings"](https://pubs.acs.org/doi/10.1021/acs.jcim.9b01212) 😊.
 
+Preprint: [https://doi.org/10.26434/chemrxiv.11625885](https://doi.org/10.26434/chemrxiv.11625885)
+
 ```
 @article{morris2020transformer,
 author={Morris, Paul
