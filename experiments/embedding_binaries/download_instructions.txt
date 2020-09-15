@@ -1,0 +1,10 @@
+The dataset files are too large to include in this repository or GitHub's releases.
+H5py binary files for each dataset are available from this public Google Drive link:
+https://drive.google.com/drive/folders/1mJZPlFaStmsuwnpGVlpwJ7XL9Di_6j5u?usp=sharing
+
+hiv1_protease_2.hdf5 is ~3Gb (easiest to use).
+The 652067 and 1053197 assay files are ~200Gb.
+
+Download the h5py binary files for each dataset and place them in this folder (embedding_binaries).
+
+If this download is inconvenient or the link is down, use the build_embedding_binaries.ipynb notebook and the dataset TSV files in the binding_datasets folder to generate the binaries on your own machine.
