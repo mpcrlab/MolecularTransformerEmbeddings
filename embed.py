@@ -31,7 +31,7 @@ smiles_strings = [line.strip("\n") for line in open(args.data_path, "r")]
 print("Loaded {0} SMILES strings from {1}".format(len(smiles_strings), args.data_path))
 
 print("Initializing Transformer...")
-model = Transformer(ALPHABET_SIZE, args.embedding_size, args.num_layers)
+model = Transformer(ALPHABET_SIZE, args.embedding_size, args.num_layers).eval()
 print("Transformer Initialized.")
 
 print("Loading pretrained weights from", args.checkpoint_path)
