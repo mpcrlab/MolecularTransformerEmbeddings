@@ -8,4 +8,4 @@ docker run \
     --gpus all \
     --ipc="host" \
     --name mte-notebook \
-    moleculartransformerembeddings
+    pmorris2012/moleculartransformerembeddings

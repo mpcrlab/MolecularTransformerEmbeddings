@@ -8,5 +8,5 @@ docker run \
     --ipc="host" \
     --name mte-notebook \
     --entrypoint python3
-    moleculartransformerembeddings
+    pmorris2012/moleculartransformerembeddings
     embed.py
