@@ -32,21 +32,15 @@ print("Loaded {0} SMILES strings from {1}".format(len(smiles_strings), args.data
 
 print("Initializing Transformer...")
 model = Transformer(ALPHABET_SIZE, args.embedding_size, args.num_layers).eval()
+model = torch.nn.DataParallel(model)
 print("Transformer Initialized.")
 
 print("Loading pretrained weights from", args.checkpoint_path)
 checkpoint = torch.load(args.checkpoint_path, map_location=torch.device("cpu"))
-try:
-    model.load_state_dict(checkpoint['state_dict'], strict=False)
-except AttributeError as e:
-    model = nn.DataParallel(model)
-    model.load_state_dict(checkpoint['state_dict'], strict=False)
+model.load_state_dict(checkpoint['state_dict'])
 print("Pretrained weights loaded")
-
-try:
-    encoder = model.module.encoder
-except AttributeError as e:
-    encoder = model.encoder
+model = model.module.cpu()
+encoder = model.encoder.cpu()
 
 embeddings = []
 with torch.no_grad():
